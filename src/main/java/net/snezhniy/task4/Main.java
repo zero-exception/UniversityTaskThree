@@ -34,5 +34,8 @@ public class Main implements TaskEntrypoint {
         System.out.printf("Слов в строке: %s\n", stroki.wordCount());
         System.out.printf("Перевёрнутая строка: %s\n", stroki.reverse());
         System.out.printf("Алфавитная сортировка: %s\n", stroki.sortAlphabetically());
+
+        Dopstroki dopstroki = new Dopstroki(stroki.value);
+        System.out.printf("Обратноалфавитная сортировка: %s\n", dopstroki.sortReverseAlphabetically());
     }
 }
